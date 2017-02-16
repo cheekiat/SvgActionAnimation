@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -12,29 +13,35 @@
     tools:context="cheekiat.svgactionanimation.MainActivity">
 
 
-    <ImageView
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/svg_start"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_gears" />
 
     <Button
+        android:id="@+id/run"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:layout_row="1"
-        android:text="Button" />
+        android:text="Start" />
 
-    <ImageView
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/svg_play"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_youtube" />
 
     <Button
+        android:id="@+id/play"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:layout_row="1"
-        android:text="Button" />
+        android:text="Play" />
 </LinearLayout>
